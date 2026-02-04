@@ -1306,8 +1306,15 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/overlay.png"), url("images/bg.jpg");
-		background-repeat: repeat, no-repeat;
+		background: hsla(12, 87%, 37%, 1);
+
+background: linear-gradient(90deg, hsla(12, 87%, 37%, 1) 0%, hsla(14, 87%, 49%, 1) 99%);
+
+background: -moz-linear-gradient(90deg, hsla(12, 87%, 37%, 1) 0%, hsla(14, 87%, 49%, 1) 99%);
+
+background: -webkit-linear-gradient(90deg, hsla(12, 87%, 37%, 1) 0%, hsla(14, 87%, 49%, 1) 99%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B02E0C", endColorstr="#EB4511", GradientType=1 );
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
 		overflow-y: scroll;
@@ -1831,7 +1838,7 @@ input, select, textarea {
 				-webkit-transition: opacity .25s ease-in-out;
 				-ms-transition: opacity .25s ease-in-out;
 				transition: opacity .25s ease-in-out;
-				width: 5.5em;
+				width: 6.5em;
 				margin-left: -2.75em;
 			}
 
@@ -2074,6 +2081,7 @@ input, select, textarea {
 					#main > .panel.intro .pic:hover .arrow {
 						width: 3em;
 						padding-right: 0.25em;
+						background: EB4511;
 					}
 
 				#main > .panel.intro header {
@@ -2139,6 +2147,173 @@ input, select, textarea {
 						}
 
 				}
+
+/* Table */
+	#json-table{
+		font-family: "Poppins", sans-serif;
+		border-collapse: collapse;
+		margin: 5px 0;
+		font-size: 0.6em;
+		border-radius: 5px 5px 0 0;
+		overflow: hidden;
+	}
+
+	#json-table th{
+		color: #FEFDFF;
+		background: #8EB1C7;
+		padding: 5px 7.5px;
+		text-align: left;
+		font-weight: bold;
+	}
+
+	#json-table tr td{
+		padding: 5px 7.5px;
+		text-align: left;
+	}
+
+	#json-table tbody tr{
+		border-bottom: 1px solid #C1BFB5;
+	}
+
+	#json-table tbody tr:nth-child(even) td{
+		color: #FEFDFF;
+		background: #C1BFB5;
+	}
+
+	#json-table tbody tr:last-of-type{
+		border-bottom: 2px solid #8EB1C7;
+	}
+
+/* Tabs */
+	.tab-control {
+		display: grid;
+  		place-items: center;
+	}
+
+	.tab {
+		overflow: hidden;
+		background-color: #8EB1C7;
+		text-align: center;
+		border-radius: 5px;
+
+	}
+
+	.tab button {
+		background-color: inherit;
+		float: left;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		transition: 0.3s;
+	}
+
+	.tab button:hover {
+		background-color: #2E2F2F;
+	}
+
+
+	.tab button.active {
+		background-color: #2E2F2F;	
+	}
+
+	.tabcontent {
+		display: none;
+		padding: 6px 12px;
+		border-top: none;
+	}
+
+	.tabcontent {
+		animation: fadeEffect 1s; /* Fading effect takes 1 second */
+	}
+
+	/* Go from zero to full opacity */
+	@keyframes fadeEffect {
+		from {opacity: 0;}
+		to {opacity: 1;}
+	}
+
+/* Slideshow */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+	.mySlides {
+	display: none;
+	}
+
+	/* Next & previous buttons */
+	.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover, .next:hover {
+		background-color: #EB4511
+	}
+
+	/* Caption text */
+	.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+	}
+
+
+	/* The dots/bullets/indicators */
+	.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+	}
+
+	.slideshow-active, .dot:hover {
+	background-color: #EB4511;
+	}
+
+	/* Fading animation */
+	.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+	}
+
+	@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+	}
 
 /* Footer */
 
