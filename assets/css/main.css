@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
-@import url("fontawesome-all.min.css");
 
 /*
 	Astral by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+	Colours https://coolors.co/2e2f2f-b02e0c-eb4511-8eb1c7-fefdff
 */
 
 html, body, div, span, applet, object,
@@ -1306,15 +1307,8 @@ input, select, textarea {
 	}
 
 	body {
-		background: hsla(12, 87%, 37%, 1);
-
-background: linear-gradient(90deg, hsla(12, 87%, 37%, 1) 0%, hsla(14, 87%, 49%, 1) 99%);
-
-background: -moz-linear-gradient(90deg, hsla(12, 87%, 37%, 1) 0%, hsla(14, 87%, 49%, 1) 99%);
-
-background: -webkit-linear-gradient(90deg, hsla(12, 87%, 37%, 1) 0%, hsla(14, 87%, 49%, 1) 99%);
-
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B02E0C", endColorstr="#EB4511", GradientType=1 );
+		background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ 		background-blend-mode: multiply;
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
 		overflow-y: scroll;
@@ -1331,8 +1325,8 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B02E0C", en
 			transition: none !important;
 		}
 
-	body, input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
+	body, span, input, textarea, select {
+		font-family: "Josefin Sans", sans-serif;
 		font-weight: 300;
 		color: #777777;
 		font-size: 20pt;
@@ -1754,7 +1748,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B02E0C", en
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
+			font-family: 'Font Awesome 7 Free';
 			font-weight: 400;
 		}
 
@@ -1763,7 +1757,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B02E0C", en
 		}
 
 		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
+			font-family: 'Font Awesome 7 Brands';
 		}
 
 		.icon:before {
@@ -1826,7 +1820,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B02E0C", en
 			#nav a span {
 				display: block;
 				position: absolute;
-				background: #222222;
+				background: #EB4511;
 				color: #ffffff;
 				top: -2.75em;
 				font-size: 0.3em;
@@ -1849,7 +1843,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B02E0C", en
 					bottom: -0.4em;
 					left: 50%;
 					margin-left: -0.6em;
-					border-top: solid 0.6em #222222;
+					border-top: solid 0.6em #EB4511;
 					border-left: solid 0.6em transparent;
 					border-right: solid 0.6em transparent;
 				}
@@ -2150,7 +2144,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B02E0C", en
 
 /* Table */
 	#json-table{
-		font-family: "Poppins", sans-serif;
+		font-family: "Open-sans", sans-serif;
 		border-collapse: collapse;
 		margin: 5px 0;
 		font-size: 0.6em;
@@ -2160,7 +2154,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B02E0C", en
 
 	#json-table th{
 		color: #FEFDFF;
-		background: #8EB1C7;
+		background: #EB4511;
 		padding: 5px 7.5px;
 		text-align: left;
 		font-weight: bold;
@@ -2181,7 +2175,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B02E0C", en
 	}
 
 	#json-table tbody tr:last-of-type{
-		border-bottom: 2px solid #8EB1C7;
+		border-bottom: 2px solid #EB4511;
 	}
 
 /* Tabs */
@@ -2192,7 +2186,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B02E0C", en
 
 	.tab {
 		overflow: hidden;
-		background-color: #8EB1C7;
+		background-color: #EB4511;
 		text-align: center;
 		border-radius: 5px;
 
@@ -2314,7 +2308,46 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#B02E0C", en
 	from {opacity: .4}
 	to {opacity: 1}
 	}
+/* Contact */
 
+	.fullname{
+		border-bottom: 2px solid #EB4511;
+		margin: 5px;
+		padding: 5px;
+	}
+
+	.fullname h2{
+		display: inline-block;
+	
+	}
+
+	.punlife-title{
+		color: #EB4511;
+	}
+
+	.contact-details {
+		display: flexbox;
+		
+	}
+
+	.contact-method {
+		margin: 5px;
+		padding: 5px;
+	}
+
+	.contact-name {
+		display:inline-block;
+		color: #2E2F2F;
+	}
+
+	.icon-background {
+    	color: #2E2F2F;
+		
+	}
+
+	.contact-icon {
+		color: #8EB1C7;
+	}
 /* Footer */
 
 	#footer {

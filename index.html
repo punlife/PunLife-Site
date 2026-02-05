@@ -10,6 +10,12 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -19,13 +25,14 @@
 
 				<!-- Nav -->
 					<nav id="nav">
-						<a href="#" class="icon solid fa-home"><span>Home</span></a>
+						<a href="#" class="icon solid fa fa-home"><span>Home</span></a>
 						<!-- <a href="#work" class="icon solid fa-code"><span>Software</span></a> -->
-						<a href="#commentary" class="icon solid fa-microphone"><span>Commentary</span></a>
-						<a href="#gallery" class="icon solid fa-camera"><span>Gallery</span></a>
-						<a href="https://twitter.com/punlife_" class="icon brands fa-twitter"><span>Twitter</span></a>
-						<a href="https://www.instagram.com/justpunlife" class="icon brands fa-instagram"><span>Instagram</span></a>
-						<a href="https://www.youtube.com/@PunLife" class="icon brands fa-youtube"><span>Youtube</span></a>
+						<a href="#commentary" class="icon solid fa fa-microphone"><span>Commentary</span></a>
+						<a href="#highlights" class="icon solid fa fa-video"><span>Highlights</span></a>
+						<a href="#gallery" class="icon solid fa fa-camera"><span>Gallery</span></a>
+						<a href="https://twitter.com/punlife_" class="icon brands fa fa-twitter"><span>Twitter</span></a>
+						<a href="https://www.instagram.com/justpunlife" class="icon brands fa fa-instagram"><span>Instagram</span></a>
+						<a href="https://www.youtube.com/@PunLife" class="icon brands fa fa-youtube"><span>Youtube</span></a>
 					</nav>
 
 				<!-- Main -->
@@ -34,13 +41,33 @@
 						<!-- Me -->
 							<article id="home" class="panel intro">
 								<header>
-									<h2>Lukasz "PunLife" Drozda</h2>
-									<p>Software Developer</p>
-									<p>Esports commentator</p> 
-									<p>Statistician</p>
+									<div class="fullname">
+										<h2>Lukasz</h2>
+										<h2 class="punlife-title">"PunLife"</h2>
+										<h2>Drozda</h2>
+									</div>
+									<div class="subtitle">
+										<p>Software Developer and Commentator</p>
+									</div>
+									<div class="contact-details">
+										<div class="contact-method">
+											<div class ="fa-stack fa-2x">
+												<i class="fa fa-circle fa-stack-2x icon-background icon-holder"></i>
+												<i class="fa-brands fa-stack-1x fa-discord contact-icon icon-holder"></i>
+											</div>
+											<p class="contact-name">punlife</p>
+										</div>
+										<div class="contact-method">
+											<div class ="fa-stack fa-2x">
+												<i class="fa fa-circle fa-stack-2x icon-background icon-holder"></i>
+												<i class="fa fa-stack-1x fa-at contact-icon icon-holder"></i>
+											</div>
+											<p class="contact-name">punlife@punlife.co.uk</p>
+										</div>
+									</div>
 								</header>
 								<a href="#work" class="jumplink pic">
-									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
+									<span class="arrow icon solid fa fa-chevron-right"><span>See my work</span></span>
 									<img src="images/punlife.jpg" alt="" />
 								</a>
 							</article>
@@ -208,40 +235,24 @@
 								</section>
 							</article>
 
-						<!-- Contact -->
-							<article id="contact" class="panel">
+						<!-- Commentary -->
+							<article id="highlights" class="panel">
 								<header>
-									<h2>Contact Me</h2>
-								</header>
-								<form action="#" method="post">
-									<div>
-										<div class="row">
-											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<input type="submit" value="Send Message" />
-											</div>
-										</div>
-									</div>
-								</form>
+									<h2>Highlight reels</h2>
+								</header>						
+								<section>
+									<iframe class='reel' width="100%" height="400" src="https://www.youtube.com/embed/Ir_ehQ7eX9w?si=9kFEqRpOWWGOYGZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+									<iframe class='reel' width="100%" height="400" src="https://www.youtube.com/embed/vE2lMU-1f4k?si=BYrxE6sEcBy33aVG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+									<iframe class='reel' width="100%" height="400" src="https://www.youtube.com/embed/hz223vwYd8Y?si=rIe0zcZQXQlaKUdS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+									<iframe class='reel' width="100%" height="400" src="https://www.youtube.com/embed/Lfj9C6dxb9o?si=9l7ql50b5qmQ4oqO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								</section>
 							</article>
-
 					</div>
 
 				<!-- Footer -->
 					<div id="footer">
 						<ul class="copyright">
-							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; Lukasz Drozda.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</div>
 
