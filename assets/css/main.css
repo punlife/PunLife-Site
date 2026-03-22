@@ -12,8 +12,7 @@ pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
 u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
+form, label, legend, caption, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
@@ -1873,7 +1872,7 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper {
-		width: 45em;
+		width: 55em;
 		margin: 0 auto;
 		min-height: 100vh;
 		max-width: 100%;
@@ -2141,15 +2140,6 @@ input, select, textarea {
 				}
 
 /* Table */
-	#json-table{
-		font-family: "Open-sans", sans-serif;
-		border-collapse: collapse;
-		margin: 5px 0;
-		font-size: 0.6em;
-		border-radius: 5px 5px 0 0;
-		overflow: hidden;
-	}
-
 	#json-table th{
 		color: #FEFDFF;
 		background: #EB4511;
@@ -2174,6 +2164,42 @@ input, select, textarea {
 
 	#json-table tbody tr:last-of-type{
 		border-bottom: 2px solid #EB4511;
+	}
+
+	thead {
+		background-color: #EB4511;
+	}
+
+	.dt-info, .dt-search {
+		color: #FEFDFF;
+		font-family: "Open-sans", sans-serif;
+		font-size: 1em;
+		font-weight: 500;
+	}
+
+	.dt-column-title {
+		color: #FEFDFF;
+		font-family: "Open-sans", sans-serif;
+		font-size: 1.3em;
+		font-weight: 700;
+	}
+
+	.dt-column-order {
+		color: #FEFDFF;
+	}
+
+	thead, tbody{
+		font-family: "Open-sans", sans-serif;
+		font-size: 0.9em;
+	}
+
+	tbody, tr, td {
+		font-family: "Open-sans", sans-serif;
+		font-size: 0.9em;
+		margin: 0;
+		padding: 0;
+		border: 0;	
+		vertical-align: baseline;
 	}
 
 /* Tabs */

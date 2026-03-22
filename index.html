@@ -17,6 +17,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css">
+		<link rel="stylesheet" href="https://cdn.datatables.net/2.3.7/css/dataTables.dataTables.min.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -154,24 +155,7 @@
 									<h2>Commentary experience</h2>
 								</header>						
 								<section>
-									<div class="tab-control">
-										<!-- Tab links -->
-										<div class="tab">
-											<button class="tablinks" onclick="openTab(event, 'Tekken8')" id="defaultOpen">Tekken 8</button>
-											<button class="tablinks" onclick="openTab(event, 'Tekken7')">Tekken 7</button>
-											<button class="tablinks" onclick="openTab(event, 'Others')">Others</button>
-										</div>
-										<!-- Tab content -->
-										<div id="Tekken8" class="tabcontent">
-											<div class="tekken_eight_table json-table-container"></div>
-										</div>
-										<div id="Tekken7" class="tabcontent">
-											<div class="tekken_seven_table json-table-container"></div>
-										</div>
-										<div id="Others" class="tabcontent">
-											<div class="other_game_table json-table-container"></div>
-										</div>
-									</div>
+									<table id="experience_table" class="display"></table>
 								</section>
 							</article>
 
@@ -201,8 +185,9 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://cdn.datatables.net/2.3.7/js/dataTables.js"></script>
 			<script defer src="assets/js/json_table.js"></script>
-			<script defer src="assets/js/tab_control.js"></script>
 			<script defer src="assets/js/image_slideshow.js"></script>
+			
 	</body>
 </html>
