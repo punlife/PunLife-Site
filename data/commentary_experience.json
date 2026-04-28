@@ -1113,5 +1113,32 @@
 
     "Game": "Tekken 8",
     "Notes": ""
+  },
+  {
+    "Event": "Edinbrawl V",
+    "Date": "2026-04-11",
+    "Type": "Offline",
+    "Location": "Edinburgh, United Kingdom",
+
+    "Game": "Tekken 8",
+    "Notes": ""
+  },
+  {
+    "Event": "EMEA Tekken Cup 4: LCQ",
+    "Date": "2026-04-25",
+    "Type": "Offline",
+    "Location": "Paris, France",
+
+    "Game": "Tekken 8",
+    "Notes": ""
+  },
+  {
+    "Event": "EMEA Tekken Cup 4: Finals",
+    "Date": "2026-04-26",
+    "Type": "Offline",
+    "Location": "Paris, France",
+
+    "Game": "Tekken 8",
+    "Notes": ""
   }
 ]
